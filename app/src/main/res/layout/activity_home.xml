@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Game.HomeActivity">
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="404dp"
+        android:background="#0AFFFFFF"
+        android:columnCount="1"
+        android:rowCount="4"
+        android:theme="@style/brrr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/instruction_button"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#E6E4EC"
+            android:text="@string/continue_button"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            app:strokeColor="#90FFFFFF"
+            app:strokeWidth="1dp"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="127dp" />
+
+        <Button
+            android:id="@+id/newgame_button"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#C2BCCF"
+            android:text="@string/newgame_button"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFFFFF"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <Button
+            android:id="@+id/statistics_button"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#998CB5"
+            android:text="@string/statistics_button"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFFFFF"
+            tools:ignore="TextContrastCheck"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="247dp" />
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#554871"
+            android:text="@string/exit_button"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            app:strokeColor="#FFFFFF"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="247dp" />
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

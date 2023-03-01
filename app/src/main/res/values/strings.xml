@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Sudoku</string>
+    <string name="continue_button">INSTRUKCJA</string>
+    <string name="newgame_button">NOWA GRA</string>
+    <string name="statistics_button">STATYSTYKI</string>
+    <string name="exit_button">WYJŚCIE</string>
+
+    <string name="choose_level">WYBIERZ\n POZIOM TRUDNOŚCI</string>
+    <string name="easy_button">ŁATWY</string>
+    <string name="medium_button">ŚREDNI</string>
+    <string name="hard_button">TRUDNY</string>
+
+    <string name="home_button">MENU</string>
+    <string name="clear_all_button">USUŃ WSZYSTKO</string>
+    <string name="clear_one_button">USUŃ JEDNO</string>
+    <string name="bledy">POMYŁKI</string>
+    <string name="czas">CZAS</string>
+
+    <string name="instruction_textView">Na czym polega gra?</string>
+    <string name="instruction">Zasady gry Sudoku są niezwykle proste.
+        Kwadratowa plansza jest podzielona na dziewięć identycznych kwadratów 3 x 3 - w każdym z nich znajduje się dziewięć komórek. Twoim zadaniem jest wypełnienie wszystkich komórek planszy cyframi od 1 do 9. W każdym wierszu i każdej kolumnie dana cyfra może występować jedynie raz. Podobnie w każdym z dziewięciu kwadratów 3 x 3 - cyfry nie mogą się powtarzać.</string>
+    <string name="back">WRÓĆ</string>
+
+    <string name="staty">TABELA WYNIKÓW</string>
+
+</resources>

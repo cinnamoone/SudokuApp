@@ -1,0 +1,1772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Game.MainActivity">
+
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/whiteborder"
+        android:text="@string/bledy"
+        android:textAlignment="center"
+        android:textColor="#352063"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2"
+        app:layout_constraintVertical_bias="0.575" />
+
+    <GridLayout
+        android:id="@+id/gridLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:columnCount="5"
+        android:rowCount="5"
+        android:theme="@style/brrr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gridLayout9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/one"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="#3C7F67BF"
+            android:stateListAnimator="@android:anim/accelerate_decelerate_interpolator"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="15dp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="491dp" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="#48AAA0B5"
+            android:text="2"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="15dp"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="491dp" />
+
+        <Button
+            android:id="@+id/three"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:background="#3C7F67BF"
+            android:text="3"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="15dp"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="491dp" />
+
+        <Button
+            android:id="@+id/four"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="#48AAA0B5"
+            android:text="4"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="15dp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="561dp" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="#3C7F67BF"
+            android:text="5"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="15dp"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="561dp" />
+
+        <Button
+            android:id="@+id/six"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:background="#48AAA0B5"
+            android:text="6"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="15dp"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="561dp" />
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="#3C7F67BF"
+            android:text="7"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="15dp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="631dp" />
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="#48AAA0B5"
+            android:text="8"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="15dp"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="631dp" />
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="#3C7F67BF"
+            android:text="9"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="15dp"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="631dp" />
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="4dp"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:theme="@style/brrr"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="#00651FFF"
+            android:text="@string/home_button"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="42dp" />
+
+        <Button
+            android:id="@+id/newGameButton"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="#00422A78"
+            android:text="@string/newgame_button"
+            tools:layout_editor_absoluteX="235dp"
+            tools:layout_editor_absoluteY="42dp" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout3"
+        android:layout_width="363dp"
+        android:layout_height="366dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="204dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="#00FFFFFF"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:theme="@style/purpp"
+            tools:layout_editor_absoluteX="-86dp"
+            tools:layout_editor_absoluteY="243dp">
+
+            <EditText
+                android:id="@+id/oneb1"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/buttons"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/oneb2"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@drawable/buttons"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/oneb3"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="@drawable/buttons"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/oneb4"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="@drawable/buttons"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/oneb5"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@drawable/buttons"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/oneb6"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="@drawable/buttons"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/oneb7"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="@drawable/buttons"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/oneb8"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:background="@drawable/buttons"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/oneb9"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="@drawable/buttons"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@drawable/whiteborder"
+            android:backgroundTint="#00FFFFFF"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:theme="@style/purpp"
+            tools:layout_editor_absoluteX="-86dp"
+            tools:layout_editor_absoluteY="243dp">
+
+            <EditText
+                android:id="@+id/fourb1"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fourb2"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fourb3"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fourb4"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fourb5"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fourb6"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fourb7"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fourb8"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fourb9"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@drawable/purpleborder"
+            android:backgroundTint="#00FFFFFF"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:theme="@style/whitt"
+            tools:layout_editor_absoluteX="-86dp"
+            tools:layout_editor_absoluteY="243dp">
+
+            <EditText
+                android:id="@+id/fiveb1"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fiveb2"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fiveb3"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fiveb4"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fiveb5"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fiveb6"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fiveb7"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fiveb8"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fiveb9"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:background="@drawable/whiteborder"
+            android:backgroundTint="#00FFFFFF"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:theme="@style/whitt"
+            tools:layout_editor_absoluteX="-86dp"
+            tools:layout_editor_absoluteY="243dp">
+
+            <EditText
+                android:id="@+id/sixb1"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sixb2"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sixb3"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sixb4"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sixb5"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sixb6"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sixb7"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sixb8"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sixb9"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="@drawable/purpleborder"
+            android:backgroundTint="#00FFFFFF"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:theme="@style/purpp"
+            tools:layout_editor_absoluteX="-86dp"
+            tools:layout_editor_absoluteY="243dp">
+
+            <EditText
+                android:id="@+id/sevenb1"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sevenb5"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sevenb6"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sevenb7"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sevenb8"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sevenb2"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sevenb4"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="@drawable/purpleborder"
+                android:text=""
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sevenb3"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sevenb9"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:backgroundTint="#00FFFFFF"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:theme="@style/whitt"
+            tools:layout_editor_absoluteX="-86dp"
+            tools:layout_editor_absoluteY="243dp">
+
+            <EditText
+                android:id="@+id/eightb1"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/eightb2"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/eightb3"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/eightb4"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/eightb5"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/eightb6"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/eightb7"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/eightb8"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/eightb9"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="@drawable/purpleborder"
+            android:backgroundTint="#00FFFFFF"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:theme="@style/whitt"
+            tools:layout_editor_absoluteX="-86dp"
+            tools:layout_editor_absoluteY="243dp">
+
+            <EditText
+                android:id="@+id/nineb1"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nineb2"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nineb3"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nineb4"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nineb5"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nineb6"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nineb7"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nineb8"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nineb9"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@drawable/whiteborder"
+            android:backgroundTint="#00FFFFFF"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:theme="@style/whitt"
+            tools:layout_editor_absoluteX="-86dp"
+            tools:layout_editor_absoluteY="243dp">
+
+            <EditText
+                android:id="@+id/twob1"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/twob2"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/twob3"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/twob4"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/twob5"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/twob6"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/twob7"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/twob8"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/twob9"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="@drawable/whiteborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:background="@drawable/purpleborder"
+            android:backgroundTint="#00FFFFFF"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:theme="@style/whitt"
+            tools:layout_editor_absoluteX="-86dp"
+            tools:layout_editor_absoluteY="243dp">
+
+            <EditText
+                android:id="@+id/threeb1"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/threeb2"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/threeb3"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/threeb4"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/threeb5"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/threeb6"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/threeb7"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/threeb8"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/threeb9"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="@drawable/purpleborder"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </GridLayout>
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:columnCount="1"
+        android:rowCount="3"
+        android:theme="@style/brrr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/gridLayout8"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/clearAll"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="133dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="#233B2E59"
+            android:backgroundTint="#86DBD7E4"
+            android:lineSpacingExtra="16sp"
+            android:text="@string/clear_all_button"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            app:cornerRadius="20dp"
+            app:strokeWidth="2dp"
+            tools:layout_editor_absoluteX="170dp"
+            tools:layout_editor_absoluteY="306dp" />
+
+        <Button
+            android:id="@+id/clearOne"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="#48D81B60"
+            android:backgroundTint="#58408C"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/clear_one_button"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            app:cornerRadius="20dp"
+            tools:layout_editor_absoluteX="259dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+
+        <Button
+            android:id="@+id/exitButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="#5648287A"
+            android:text="@string/exit_button"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="164dp" />
+    </GridLayout>
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:background="@drawable/whiteborder"
+        android:textAlignment="center"
+        android:textColor="#352063"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/counter"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2"
+        app:layout_constraintVertical_bias="0.666" />
+
+
+    <!--    <TextView-->
+<!--        -->
+<!--        android:id="@+id/time"-->
+<!--        android:layout_width="118dp"-->
+<!--        android:layout_height="24dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:background="@drawable/whiteborder"-->
+<!--        android:text="@string/czas"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#352063"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/gridLayout3"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/counter"-->
+<!--        app:layout_constraintHorizontal_bias="0.163"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/gridLayout2"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
